@@ -1,0 +1,14 @@
+class Alumno:
+
+    #Constructora
+    def _init_(self,nombreAlumno, notaAlumno):
+        self.__nombre = nombreAlumno
+        self.__nota = notaAlumno
+
+
+    def imprimirData(self):
+        if int(self._nota) < 5: print(f'{self.nombre} ha obtenido la nota: {self._nota}  Suspendido')
+        return print(f'{self._nombre} ha obtenido la nota: {self._nota}  Aprobado')
+    
+
+Alumno("Diego",10).imprimirData()
